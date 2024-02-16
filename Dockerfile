@@ -2,13 +2,12 @@ FROM node:21.6.1 as build
 
 ARG BUILD_ENV=prod
 
-WORKDIR /app
+WORKDIR /iam
 
-COPY ./package.json /app/package.json
-COPY ./package-lock.json /app/package-lock.json
+COPY ./package.json ./package.json
 
 RUN npm cache clean --force
-RUN npm ci
+RUN npm i --force
 
 COPY . .
 

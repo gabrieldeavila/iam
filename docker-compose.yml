@@ -9,12 +9,8 @@ services:
     env_file:
       - ./.env
     ports:
-      - "3003:3003"
+      - "3004:3004"
     volumes:
-      - .:/app
-      - ./node_modules:/home/nodejs/node_modules
-      - .env:/app/.env
-      # auto reload
-      - .:/app/src
+      - .:/iam
       # prevent node_modules from being copied to the container
-      - /app/node_modules
+      - /iam/node_modules
