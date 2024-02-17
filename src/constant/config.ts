@@ -1,7 +1,6 @@
 export const siteConfig = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: 'Gabriel Ebone de Ávila - Portfolio',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+    'A portfolio of Gabriel Ebone de Ávila, a software engineer and web developer based in Brazil. I am passionate about web development, and I am always looking for new challenges and opportunities to learn and grow. I am currently working with React, Next.js, and Node.js. I am also interested in learning more about TypeScript, GraphQL, and AWS.',
+  url: 'https://me.dissolutus.com',
 };

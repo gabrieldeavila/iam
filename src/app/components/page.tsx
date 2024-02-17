@@ -36,7 +36,7 @@ export default function ComponentPage() {
   return (
     <main>
       <section
-        className={clsx(mode === 'dark' ? 'bg-dark' : 'bg-white', color)}
+        className={clsx(mode === 'dark' ? 'bg-dark' : 'bg-dark', color)}
       >
         <div
           className={clsx(
@@ -75,7 +75,7 @@ export default function ComponentPage() {
                     'block max-w-xs rounded',
                     mode === 'dark'
                       ? 'bg-dark border border-gray-600'
-                      : 'border-gray-300 bg-white',
+                      : 'border-gray-300 bg-dark',
                     'focus:border-primary-400 focus:ring-primary-400 focus:outline-none focus:ring'
                   )}
                   onChange={(e) => setColor(e.target.value as Color)}

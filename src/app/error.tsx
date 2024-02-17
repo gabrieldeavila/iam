@@ -19,7 +19,7 @@ export default function Error({
 
   return (
     <main>
-      <section className='bg-white'>
+      <section className='bg-dark'>
         <div className='layout flex min-h-screen flex-col items-center justify-center text-center text-black'>
           <RiAlarmWarningFill
             size={60}
