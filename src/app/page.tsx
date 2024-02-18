@@ -18,11 +18,22 @@ import Head from 'next/head';
 export default function HomePage() {
   return (
     <main>
-      <Head>
-        <title>Hi</title>
-      </Head>
-      <section className='bg-dark'>
-       
+      <section className='bg-dark text-white'>
+        <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
+          <h1 className='max-w-4xl text-6xl	'>
+            i create web experiences that make people feel deeply connected.
+          </h1>
+
+          <div>
+            <div>
+              <div> img here</div>
+              <div> hey there folks!</div>
+              <p>
+                I am Gabriel Ávila, a web developer focused on making the web a creative place. I am always looking for new challenges and opportunities to learn and grow. I am currently working with React, React Native, Typescript, Next.js, and Node.js.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
