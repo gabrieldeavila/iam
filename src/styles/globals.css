@@ -28,6 +28,12 @@
   /* #endregion  /**======== Primary Color =========== */
 }
 
+.icon {
+  width: 2.5rem;
+  height: auto;
+  position: fixed;
+}
+
 @layer base {
   /* inter var - latin */
   @font-face {
