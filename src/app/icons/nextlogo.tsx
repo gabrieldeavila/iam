@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { forwardRef, memo } from 'react'
+import { IIconProps } from './interface'
 
-function NextLogo() {
+const NextLogo = memo(forwardRef<SVGSVGElement | null, IIconProps
+  >(({
+    style
+  }, ref)=> {
   return (
-    <svg className='icon' width="394" height="80" viewBox="0 0 394 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg style={style} ref={ref} className='icon' width="394" height="80" viewBox="0 0 394 80" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M261.919 0.0330722H330.547V12.7H303.323V79.339H289.71V12.7H261.919V0.0330722Z" fill="black" />
       <path d="M149.052 0.0330722V12.7H94.0421V33.0772H138.281V45.7441H94.0421V66.6721H149.052V79.339H80.43V12.7H80.4243V0.0330722H149.052Z" fill="black" />
       <path d="M183.32 0.0661486H165.506L229.312 79.3721H247.178L215.271 39.7464L247.127 0.126654L229.312 0.154184L206.352 28.6697L183.32 0.0661486Z" fill="black" />
@@ -14,6 +18,6 @@ function NextLogo() {
     </svg>
 
   )
-}
+}))
 
 export default NextLogo

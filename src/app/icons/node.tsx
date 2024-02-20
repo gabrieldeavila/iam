@@ -1,6 +1,10 @@
-import React from "react";
+import React, { forwardRef, memo } from "react";
+import { IIconProps } from "./interface";
 
-function NodeLogo() {
+const NodeLogo = memo(forwardRef<SVGSVGElement | null, IIconProps
+  >(({
+    style
+  }, ref) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,6 +13,7 @@ function NodeLogo() {
       className='icon'
       version="1.2"
       viewBox="0 0 442.37 270.929"
+      style={style} ref={ref}
     >
       <defs>
         <clipPath id="a">
@@ -83,6 +88,6 @@ function NodeLogo() {
       </g>
     </svg>
   );
-}
+}))
 
 export default NodeLogo;

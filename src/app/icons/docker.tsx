@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { forwardRef, memo } from 'react'
+import { IIconProps } from './interface'
 
-function Docker() {
+const Docker = memo(forwardRef<SVGSVGElement | null, IIconProps
+>(({
+  style
+}, ref) => {
   return (
-    <svg className='icon' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    <svg style={style} ref={ref} className='icon' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
       viewBox="0 0 439 309"
     >
       <path d="M379.6,111.7c-2.3-16.7-11.5-31.2-28.1-44.3l-9.6-6.5l-6.4,9.7c-8.2,12.5-12.3,29.9-11,46.6
@@ -14,6 +18,8 @@ function Docker() {
     </svg>
 
   )
-}
+}))
+
+Docker.displayName = 'Docker'
 
 export default Docker
