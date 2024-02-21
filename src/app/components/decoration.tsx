@@ -104,7 +104,7 @@ const RandomLevel = memo(({ component: Component,
 
   return cloneElement(<Component style={{}} />, {
     style: {
-      opacity: 0.5,
+      opacity: 0.25,
       position: 'fixed',
       top: `${top}vh`,
       left: width,
