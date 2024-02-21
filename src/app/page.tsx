@@ -29,7 +29,7 @@ export default function HomePage() {
 
       <section className='bg-dark text-white'>
         <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-          <h1 className='max-w-4xl text-6xl	'>
+          <h1 className='max-w-4xl text-6xl bg-dark	'>
             i create web experiences that make people feel deeply connected.
           </h1>
 
@@ -52,7 +52,7 @@ export default function HomePage() {
 
             </div>
 
-            <div className='flex flex-col items-start gap-2'>
+            <div className='flex flex-col bg-dark items-start gap-2'>
               <h3> hey there folks!</h3>
               <p className='text-left'>
                 I am Gabriel Ávila, a web developer dedicated to fostering creativity on the web. I am always looking for new challenges and opportunities to learn and grow. I am currently working with React, React Native, Typescript, Next.js, and Node.js.
