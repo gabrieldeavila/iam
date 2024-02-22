@@ -10,18 +10,6 @@ import NodeLogo from './icons/node';
 import Decoration from './components/decoration';
 
 
-/**
- * SVGR Support
- * Caveat: No React Props Type.
- *
- * You can override the next-env if the type is important to you
- * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
- */
-
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
-
 export default function HomePage() {
   return (
     <main>
@@ -55,12 +43,36 @@ export default function HomePage() {
             <div className='flex flex-col bg-dark items-start gap-2'>
               <h3> hey there folks!</h3>
               <p className='text-left'>
-                I am Gabriel Ávila, a web developer dedicated to fostering creativity on the web. I am always looking for new challenges and opportunities to learn and grow. I am currently working with React, React Native, Typescript, Next.js, and Node.js.
+                I am Gabriel Ávila, a <strong>front-end web developer</strong> dedicated to fostering creativity on the web. I am always looking for new challenges and opportunities to learn and grow. I am currently working with React, React Native, Typescript, Next.js, and Node.js.
               </p>
             </div>
-
           </div>
+        </div>
+      </section>
 
+      <section className='min-h-screen p-10 flex flex-col justify-center py-12 text-slate-200 bg-zinc-800 z-10 relative'>
+        <div>
+          <div className='w-2/5'>
+            <p className='italic font-extralight opacity-25'>
+              Reading Experience
+            </p>
+            <h2 className='text-4xl mt-3'>
+              Dissolutus
+            </h2>
+            <p className='mt-7'>
+              A web application for Enhanced Reading and Writing experiences
+            </p>
+          </div>
+          <div>
+            <NextImage
+              useSkeleton
+              className='w-32 md:w-40'
+              src='/images/dissolutus.png'
+              width='500'
+              height='500'
+              alt='Icon'
+            />
+          </div>
         </div>
       </section>
     </main>
