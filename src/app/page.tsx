@@ -51,8 +51,8 @@ export default function HomePage() {
       </section>
 
       <section className='min-h-screen p-10 flex flex-col justify-center py-12 text-slate-200 bg-zinc-800 z-10 relative'>
-        <div>
-          <div className='w-2/5'>
+        <div className='flex md:flex-col'>
+          <div className='flex-grow'>
             <p className='italic font-extralight opacity-25'>
               Reading Experience
             </p>
@@ -62,14 +62,19 @@ export default function HomePage() {
             <p className='mt-7'>
               A web application for Enhanced Reading and Writing experiences
             </p>
+
+            <a href='https://www.dissolutus.com/en-US/scribere' target='_blank' rel='noreferrer'>
+              Visit the project
+            </a>
           </div>
+
           <div>
             <NextImage
               useSkeleton
-              className='w-32 md:w-40'
+              className='lg:w-96'
               src='/images/dissolutus.png'
-              width='500'
-              height='500'
+              width='904'
+              height='602'
               alt='Icon'
             />
           </div>
