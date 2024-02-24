@@ -8,7 +8,8 @@ import TailwindLogo from './icons/tailwind';
 import TypescriptLogo from './icons/typescript';
 import NodeLogo from './icons/node';
 import Decoration from './components/decoration';
-
+import { FaChevronRight } from "react-icons/fa";
+import ArrowLink from '@/components/links/ArrowLink';
 
 export default function HomePage() {
   return (
@@ -17,11 +18,11 @@ export default function HomePage() {
 
       <section className='bg-dark text-white'>
         <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-          <h1 className='max-w-4xl text-6xl bg-dark	'>
+          <h1 className='max-w-4xl md:text-6xl bg-dark	'>
             i create web experiences that make people feel deeply connected.
           </h1>
 
-          <div className='flex items-center gap-10 mt-10'>
+          <div className='flex max-md:flex-col items-center gap-10 mt-10'>
             <div
               className='flex items-center justify-center'
             >
@@ -34,7 +35,7 @@ export default function HomePage() {
                   src='/images/me.jpeg'
                   width='180'
                   height='180'
-                  alt='Icon'
+                  alt='Me'
                 />
               </div>
 
@@ -50,9 +51,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className='min-h-screen p-10 flex flex-col justify-center py-12 text-slate-200 bg-zinc-800 z-10 relative'>
-        <div className='flex md:flex-col'>
-          <div className='flex-grow'>
+      <section className='min-h-screen p-10 flex flex-col justify-center py-12 text-slate-200 radial-purple z-10 relative'>
+        <div className='flex max-sm:flex-col-reverse'>
+          <div className='flex flex-grow flex-col justify-center'>
             <p className='italic font-extralight opacity-25'>
               Reading Experience
             </p>
@@ -63,15 +64,18 @@ export default function HomePage() {
               A web application for Enhanced Reading and Writing experiences
             </p>
 
-            <a href='https://www.dissolutus.com/en-US/scribere' target='_blank' rel='noreferrer'>
+            <ArrowLink
+              className="w-fit mt-5 text-yellow-600 animated-yellow"
+              href="https://www.dissolutus.com/en-US/scribere"
+            >
               Visit the project
-            </a>
+            </ArrowLink>
           </div>
 
-          <div>
+          <div className='flex items-center justify-center'>
             <NextImage
               useSkeleton
-              className='lg:w-96'
+              className='max-sm:w-72 max-md:w-96'
               src='/images/dissolutus.png'
               width='904'
               height='602'
