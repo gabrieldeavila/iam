@@ -33,6 +33,7 @@
   width: 2.5rem;
   height: auto;
   position: fixed;
+  z-index: 2;
 }
 
 @layer base {

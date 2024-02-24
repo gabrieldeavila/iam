@@ -1,24 +1,25 @@
 'use client';
 
 import NextImage from '@/components/NextImage';
-import Docker from './icons/docker';
-import NextLogo from './icons/nextlogo';
-import ReactLogo from './icons/react';
-import TailwindLogo from './icons/tailwind';
-import TypescriptLogo from './icons/typescript';
-import NodeLogo from './icons/node';
 import Decoration from './components/decoration';
-import { FaChevronRight } from "react-icons/fa";
 import ArrowLink from '@/components/links/ArrowLink';
+import { IoMdArrowRoundDown } from "react-icons/io";
+import { useCallback, useRef } from 'react';
 
 export default function HomePage() {
+  const dissRef = useRef<HTMLDivElement | null>(null);
+
+  const addScroll = useCallback(() => {
+    dissRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [])
+
   return (
     <main>
       <Decoration />
 
-      <section className='bg-dark text-white'>
+      <section className='relative bg-dark text-white'>
         <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-          <h1 className='max-w-4xl md:text-6xl bg-dark	'>
+          <h1 className='max-w-4xl md:text-6xl bg-dark z-10'>
             i create web experiences that make people feel deeply connected.
           </h1>
 
@@ -47,11 +48,19 @@ export default function HomePage() {
                 I am Gabriel Ávila, a <strong>front-end web developer</strong> dedicated to fostering creativity on the web. I am always looking for new challenges and opportunities to learn and grow. I am currently working with React, React Native, Typescript, Next.js, and Node.js.
               </p>
             </div>
+
+
           </div>
+        </div>
+
+        <div className='absolute bottom-10 left-1/2'>
+          <button onClick={addScroll} className='animate-bounce text-2xl text-white bg-primary-500 p-3 shadow-lg bg-stone-700 rounded-full'>
+            <IoMdArrowRoundDown size={20} />
+          </button>
         </div>
       </section>
 
-      <section className='min-h-screen p-10 flex flex-col justify-center py-12 text-slate-200 radial-purple z-10 relative'>
+      <section ref={dissRef} className='min-h-screen p-10 flex flex-col justify-center py-12 text-slate-200 radial-purple z-10 relative'>
         <div className='flex max-sm:flex-col-reverse'>
           <div className='flex flex-grow flex-col justify-center'>
             <p className='italic font-extralight opacity-25'>
