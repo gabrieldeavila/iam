@@ -127,6 +127,14 @@
     );
   }
 
+  .radial-green {
+    background-image: radial-gradient(
+      circle,
+      #005c28 -160%,
+      rgb(39, 39, 42) 70%
+    );
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .animated-underline {
       transition: 0.3s ease;
