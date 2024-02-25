@@ -6,6 +6,7 @@ import ArrowLink from "@/components/links/ArrowLink";
 import { IoMdArrowRoundDown } from "react-icons/io";
 import { useCallback, useRef } from "react";
 import Background1 from "@/components/svgs/background1";
+import DissolutusLogo from "@/components/svgs/dissolutus";
 
 export default function HomePage() {
   const dissRef = useRef<HTMLDivElement | null>(null);
@@ -41,9 +42,14 @@ export default function HomePage() {
             <div className="flex flex-col items-start gap-2 bg-dark">
               <h3> hey there folks!</h3>
               <p className="text-left">
-                I am Gabriel Ávila, a <strong>front-end web developer</strong>{" "}
-                dedicated to fostering creativity on the web. I am always
-                looking for new challenges and opportunities to learn and grow.
+                <span className="max-sm:block max-sm:mb-2.5">
+                  I am Gabriel Ávila, a <strong>front-end web developer</strong>{" "}
+                  dedicated to fostering creativity on the web.
+                </span>
+                <span className="max-sm:block max-sm:mb-2.5">
+                  I am always looking for new challenges and opportunities to
+                  learn and grow.
+                </span>
                 I am currently working with React, React Native, Typescript,
                 Next.js, and Node.js.
               </p>
@@ -51,7 +57,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2">
+        <div className="absolute bottom-0 sm:bottom-10 left-[42%] sm:left-1/2 z-10">
           <button
             onClick={addScroll}
             className="animate-bounce rounded-full bg-primary-500 bg-stone-700 p-3 text-2xl text-white shadow-lg"
@@ -67,8 +73,9 @@ export default function HomePage() {
       >
         <div className="flex max-sm:flex-col-reverse">
           <div className="flex flex-grow flex-col justify-center">
-            <p className="font-extralight italic opacity-25">
+            <p className="relative pt-8 font-extralight italic opacity-25">
               Reading Experience
+              <DissolutusLogo className="absolute inset-0" />
             </p>
             <h2 className="mt-3 text-4xl">Dissolutus</h2>
             <p className="mt-7">
@@ -83,12 +90,12 @@ export default function HomePage() {
             </ArrowLink>
           </div>
 
-          <div className="flex relative items-center justify-center max-sm:mb-10">
-            <Background1 className="absolute scale-100 md:scale-150 lg:scale-[2] xl:scale-[2.5] 2xl:scale-[3]"  />
+          <div className="relative flex items-center justify-center max-sm:mb-10">
+            <Background1 className="absolute scale-100 md:scale-150 lg:scale-[2] xl:scale-[2.5] 2xl:scale-[3]" />
 
             <NextImage
               useSkeleton
-              className="max-md:w-96 max-sm:w-72 z-10"
+              className="z-10 max-md:w-96 max-sm:w-72"
               src="/images/dissolutus.png"
               width="904"
               height="602"
