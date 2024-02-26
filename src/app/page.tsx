@@ -9,6 +9,7 @@ import Background1 from "@/components/svgs/background1";
 import DissolutusLogo from "@/components/svgs/dissolutus";
 import ButtonLink from "@/components/links/ButtonLink";
 import Stack from "./components/stack";
+import Background2 from "@/components/svgs/background2";
 
 export default function HomePage() {
   const dissRef = useRef<HTMLDivElement | null>(null);
@@ -160,6 +161,7 @@ export default function HomePage() {
 
       <section className="align-center relative flex min-h-screen justify-center bg-dark text-white">
         <div>
+          <Background2 />
           <ButtonLink
             variant="outline"
             className="mt-2.5"

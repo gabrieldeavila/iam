@@ -135,6 +135,17 @@
     );
   }
 
+  /* to max-sm screen */
+  @media (max-width: 640px) {
+    .stack-icons svg {
+      @apply w-8 h-8;
+    }
+
+    .stack-icons p {
+      @apply text-xs;
+    }
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .animated-underline {
       transition: 0.3s ease;
