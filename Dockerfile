@@ -14,8 +14,8 @@ COPY . .
 # fix add multi-stage build
 # VOLUME [ "/app/node_modules" ]
 
-CMD ["npm", "run", "dev"]
+# CMD ["npm", "run", "dev"]
 
 # for production
-# RUN npm run build
-# CMD ["npm", "run", "start"]
+RUN npm run build
+CMD ["npm", "run", "start"]
