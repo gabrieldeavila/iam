@@ -16,6 +16,7 @@ const Background2 = memo(
       <svg
         version="1.1"
         id="example-22"
+        className={className}
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
@@ -48,7 +49,7 @@ const Background2 = memo(
 		c58.3-32.4,129.5-72.1,253.2,2.9c93.8,56.9,38.3,145.7,101.6,200.2c40.7,35-28,204.6-225.2,167.8S476.9,511,387.6,530
 		c-89.8,19.1-275.2-94.7-225.2-147.2C191.9,351.9,178.4,301.9,172.7,275.4z"
             style={{
-              fill: bigBubbles ?? "#babef2",
+              fill: bigBubbles ?? "#426a87",
             }}
           ></path>
         </g>
@@ -397,7 +398,7 @@ const Background2 = memo(
           <polygon
             points="772.5,207.4 828.7,140.5 895.5,196.7 839.4,263.5 	"
             style={{
-              fill: smallBubbles ?? "#6f5097",
+              fill: smallBubbles ?? "#4b4b8a",
             }}
           ></polygon>
 
@@ -455,7 +456,7 @@ const Background2 = memo(
           <polygon
             points="756,218.2 768.3,203.5 840.6,263.5 828.3,278.3 	"
             style={{
-              fill: smallBubbles ?? "#6f5097",
+              fill: smallBubbles ?? "#4b4b8a",
             }}
           ></polygon>
           <path
@@ -522,7 +523,7 @@ const Background2 = memo(
             width="87.8"
             height="87.8"
             style={{
-              fill: smallBubbles ?? "#f8f8ff",
+              fill: smallBubbles ?? "#4b4b8a",
             }}
           ></rect>
 
@@ -547,7 +548,7 @@ const Background2 = memo(
             <stop
               offset="1"
               style={{
-                fill: smallBubbles ?? "#6f5097",
+                fill: smallBubbles ?? "#4b4b8a",
               }}
             ></stop>
           </linearGradient>
@@ -557,7 +558,7 @@ const Background2 = memo(
             width="87.8"
             height="87.8"
             style={{
-              fill: smallBubbles ?? "#6f5097",
+              fill: smallBubbles ?? "#4b4b8a",
             }}
           ></rect>
 
@@ -592,7 +593,7 @@ const Background2 = memo(
             width="89.8"
             height="19.6"
             style={{
-              fill: smallBubbles ?? "#6f5097",
+              fill: smallBubbles ?? "#4b4b8a",
             }}
           ></rect>
           <polygon
@@ -771,7 +772,7 @@ const Background2 = memo(
             d="M240.9,217.6l152.4-1.1c0.2,0,0.4,0.1,0.6,0.3l2,2.4L244,220.5c-0.3,0-0.6,0.2-0.7,0.6l-19.8,108.3
 		c0,0.3-0.4,0.6-0.7,0.6l-1.3,0c-0.4,0-0.7-0.3-0.7-0.7c0,0,0,0,0-0.1l18.9-110.4C239.7,218.1,240.3,217.6,240.9,217.6z"
             style={{
-              fill: smallBubbles ?? "#f8f8ff",
+              fill: smallBubbles ?? "#35357f",
             }}
           ></path>
         </g>
@@ -1028,7 +1029,7 @@ const Background2 = memo(
             </linearGradient>
             <path
               style={{
-                fill: "#2a3391"
+                fill: "#4b4b8a"
               }}
               d="M637.3,441.4c0,0-0.8-2.7-4-1c-2.8,1.5-51.5,24.6-51.5,24.6s-2.3,1.1-1.3,2.7c1,1.6,27.8,38.5,29,39
 			c0.5,0.4,1.2,0.5,1.9,0.4c1-0.2,35-16.8,35-16.8c0.8-0.5,1-1.4,0.7-2.3C647,488.1,637.6,441.9,637.3,441.4"

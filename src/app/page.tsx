@@ -10,6 +10,7 @@ import DissolutusLogo from "@/components/svgs/dissolutus";
 import ButtonLink from "@/components/links/ButtonLink";
 import Stack from "./components/stack";
 import Background2 from "@/components/svgs/background2";
+import UnstyledLink from "@/components/links/UnstyledLink";
 
 export default function HomePage() {
   const dissRef = useRef<HTMLDivElement | null>(null);
@@ -160,15 +161,19 @@ export default function HomePage() {
       </section>
 
       <section className="align-center relative flex min-h-screen justify-center bg-dark text-white">
-        <div>
-          <Background2 />
-          <ButtonLink
-            variant="outline"
-            className="mt-2.5"
-            href="mailto:gabrieleboneavila@gmail.com"
-          >
-            <h1>gabrieleboneavila@gmail.com</h1>
-          </ButtonLink>
+        <div className="container relative z-10 flex items-center justify-around">
+          <Background2 className="scale-[2.5]" />
+          <div className="flex flex-col gap-5 bg-dark">
+            <p>What are you waiting for?</p>
+            <p>Let's build something great together!</p>
+            <p>You can reach me at:</p>
+            <UnstyledLink
+              className="text-yellow-600"
+              href="mailto:gabrieleboneavila@gmail.com"
+            >
+              gabrieleboneavila@gmail.com
+            </UnstyledLink>
+          </div>
         </div>
       </section>
     </main>
