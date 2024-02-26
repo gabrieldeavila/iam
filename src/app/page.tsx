@@ -11,12 +11,13 @@ import ButtonLink from "@/components/links/ButtonLink";
 import Stack from "./components/stack";
 import Background2 from "@/components/svgs/background2";
 import UnstyledLink from "@/components/links/UnstyledLink";
+import { BsNintendoSwitch } from "react-icons/bs";
 
 export default function HomePage() {
-  const dissRef = useRef<HTMLDivElement | null>(null);
+  const stackRef = useRef<HTMLDivElement | null>(null);
 
   const addScroll = useCallback(() => {
-    dissRef.current?.scrollIntoView({ behavior: "smooth" });
+    stackRef.current?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
   return (
@@ -69,12 +70,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Stack />
+      <Stack ref={stackRef} />
 
-      <section
-        ref={dissRef}
-        className="radial-purple relative z-10 flex min-h-screen flex-col justify-center p-10 py-12 text-slate-200"
-      >
+      <section className="radial-purple relative z-10 flex min-h-screen flex-col justify-center p-10 py-12 text-slate-200">
         <div className="flex max-sm:flex-col-reverse">
           <div className="flex flex-grow flex-col justify-center">
             <p className="relative pt-8 font-extralight italic opacity-25">
@@ -160,11 +158,56 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="radial-blue relative z-10 flex min-h-screen flex-col justify-center p-10 py-12 text-slate-200">
+        <div className="flex max-sm:flex-col-reverse">
+          <div className="flex flex-grow flex-col justify-center">
+            <p className="relative pt-8 font-extralight italic opacity-25">
+              A 3D Game with Mario (can you spot the portfolio?)
+              <BsNintendoSwitch className="absolute inset-0" />
+            </p>
+            <h2 className="mt-3 text-4xl">NightmareFolio</h2>
+            <p className="mt-7">
+            </p>
+
+            <ArrowLink
+              className="animated-yellow mt-5 w-fit text-yellow-600"
+              href="https://nightmare-folio.vercel.app/mario"
+            >
+              Visit the project
+            </ArrowLink>
+            <ArrowLink
+              className="animated-yellow mt-2.5 w-fit text-yellow-600"
+              href="https://github.com/gabrieldeavila/nightmare-folio"
+            >
+              View the code
+            </ArrowLink>
+          </div>
+
+          <div className="relative flex items-center justify-center max-sm:mb-10">
+            <Background1
+              mainColor="#2d3956"
+              smallBubbles="#3a7499"
+              bigBubbles="#1c4b6d"
+              className="absolute scale-100 md:scale-150 lg:scale-[2] xl:scale-[2.5] 2xl:scale-[3]"
+            />
+
+            <NextImage
+              useSkeleton
+              className="z-10 max-md:w-96 max-sm:w-72"
+              src="/images/mario.png"
+              width="904"
+              height="602"
+              alt="Icon"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="align-center relative flex min-h-screen justify-center bg-dark text-white">
-        <div className="container relative z-10 flex items-center justify-around">
-          <Background2 className="scale-[2.5]" />
+        <div className="max-md:flex-col container relative z-10 flex items-center justify-around">
+          <Background2 className="max-sm:scale-90 max-lg:scale-100  scale-[2.5]" />
           <div className="flex flex-col gap-5 bg-dark">
-            <p>What are you waiting for?</p>
+            <h2>What are you waiting for?</h2>
             <p>Let's build something great together!</p>
             <p>You can reach me at:</p>
             <UnstyledLink

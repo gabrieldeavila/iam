@@ -135,6 +135,14 @@
     );
   }
 
+  .radial-blue {
+    background-image: radial-gradient(
+      circle,
+      #5898fa -160%,
+      rgb(39, 39, 42) 70%
+    );
+  }
+
   /* to max-sm screen */
   @media (max-width: 640px) {
     .stack-icons svg {

@@ -1,5 +1,5 @@
 import UnderlineLink from "@/components/links/UnderlineLink";
-import React from "react";
+import React, { LegacyRef, forwardRef } from "react";
 import NodeLogo from "../icons/node";
 import { IoLogoJavascript, IoLogoReact } from "react-icons/io5";
 import {
@@ -13,12 +13,15 @@ import { FaGitAlt, FaLaravel, FaNodeJs, FaPhp } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
 import { TbBrandDocker, TbBrandVscode } from "react-icons/tb";
 
-function Stack() {
+const Stack = forwardRef((_props, ref: LegacyRef<HTMLDivElement>) => {
   return (
-    <section className="relative z-10 flex flex-col justify-center  min-h-screen bg-stone-800 text-white">
-      <div className="py-5 mx-10 flex flex-col items-center justify-center gap-5">
+    <section
+      ref={ref}
+      className="relative z-10 flex min-h-screen flex-col  justify-center bg-stone-800 text-white"
+    >
+      <div className="mx-10 flex flex-col items-center justify-center gap-5 py-5">
         {/* phrase */}
-        <h3 className="text-base font-light uppercase text-slate-400 text-center">
+        <h3 className="text-center text-base font-light uppercase text-slate-400">
           It doesn't matter what you use, as long as you know how to use it.
         </h3>
         {/* stack */}
@@ -54,7 +57,7 @@ function Stack() {
           </p>
         </div>
 
-        <div className="mt-5 stack-icons flex max-w-5xl flex-wrap justify-between gap-10">
+        <div className="stack-icons mt-5 flex max-w-5xl flex-wrap justify-between gap-10">
           <div className="flex flex-col items-center gap-2.5">
             <IoLogoJavascript color="white" size={100} />
             <p>JavaScript</p>
@@ -84,7 +87,7 @@ function Stack() {
             <p>Node</p>
           </div>
           <div className="flex flex-col items-center gap-2.5">
-            <GrGraphQl  color="white" size={100} />
+            <GrGraphQl color="white" size={100} />
             <p>Graph Ql</p>
           </div>
           <div className="flex flex-col items-center gap-2.5">
@@ -115,6 +118,6 @@ function Stack() {
       </div>
     </section>
   );
-}
+});
 
 export default Stack;
