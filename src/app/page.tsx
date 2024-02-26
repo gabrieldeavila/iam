@@ -8,6 +8,7 @@ import { useCallback, useRef } from "react";
 import Background1 from "@/components/svgs/background1";
 import DissolutusLogo from "@/components/svgs/dissolutus";
 import ButtonLink from "@/components/links/ButtonLink";
+import Stack from "./components/stack";
 
 export default function HomePage() {
   const dissRef = useRef<HTMLDivElement | null>(null);
@@ -65,6 +66,8 @@ export default function HomePage() {
           </button>
         </div>
       </section>
+
+      <Stack />
 
       <section
         ref={dissRef}
@@ -126,7 +129,7 @@ export default function HomePage() {
 
           <div className="flex flex-grow flex-col items-end justify-center">
             <p className="relative pt-8 font-extralight italic opacity-25">
-              Fronteend toolkit
+              Front-end toolkit
             </p>
             <h2 className="mt-3 text-4xl">GT Design</h2>
             <p className="mt-7">
