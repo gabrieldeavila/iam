@@ -84,15 +84,19 @@ function Decoration() {
 
   if (!isMounted) return <></>;
 
-  return entries.map(([position, components], key) =>
-    components.map((component, index) => (
-      <RandomLevel
-        width={position}
-        key={index}
-        axis={{ x: index, y: key }}
-        component={COMPONENTS[component]}
-      />
-    ))
+  return (
+    <>
+      {entries.map(([position, components], key) =>
+        components.map((component, index) => (
+          <RandomLevel
+            width={position}
+            key={index}
+            axis={{ x: index, y: key }}
+            component={COMPONENTS[component]}
+          />
+        ))
+      )}
+    </>
   );
 }
 
