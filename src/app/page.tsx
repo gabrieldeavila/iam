@@ -25,7 +25,7 @@ export default function HomePage() {
       <Decoration />
 
       <section className="relative bg-dark text-white">
-        <div className="layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center">
+        <div className="layout relative flex min-h-screen flex-col items-center justify-center text-center">
           <h1 className="z-10 max-w-4xl bg-dark md:text-6xl">
             i create web experiences that make people feel deeply connected.
           </h1>
@@ -204,9 +204,9 @@ export default function HomePage() {
       </section>
 
       <section className="align-center relative flex min-h-screen justify-center bg-dark text-white">
-        <div className="max-md:flex-col container relative z-10 flex items-center justify-around">
+        <div className="max-md:flex-col container relative z-10 flex items-center justify-center gap-10 md:justify-around">
           <Background2 className="max-sm:scale-90 max-lg:scale-100  scale-[2.5]" />
-          <div className="flex flex-col gap-5 bg-dark">
+          <div className="flex flex-col gap-5 bg-dark max-sm:max-w-72">
             <h2>What are you waiting for?</h2>
             <p>Let's build something great together!</p>
             <p>You can reach me at:</p>
